@@ -1,16 +1,16 @@
 'use strict';
 
-function onEvent(event, selector, callback) {
-  return selector.addEventListener(event, callback);
+import Contact from './Contact.js'
+
+document.getElementById('submit-btn').addEventListener("click", newContact);
+
+function newContact(){
+    let data = document.getElementById('entrytext').value;
+    alert('output:' + JSON.stringify(data));
 }
 
-function getElement(selector, parent = document) {
-  return parent.getElementById(selector);
-}
+const data = document.getElementById('entrytext').value;
+console.log(data);
 
-function select(selector, parent = document) {
-  return parent.querySelector(selector);
-}
-
-/* Validate email */
-
+let c1= new Contact('John','City','email');
+console.log(c1);
