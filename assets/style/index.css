@@ -1,0 +1,88 @@
+@import "./reset.css";
+
+:root {
+    --app-dark-bg:#1a1d28;
+    --app-red:#ff3c57;
+    --app-green:#33ab4e;
+    --app-purple:#833cff;
+    --app-orange:#ff833c;
+    --app-orange-hover:#fe7a2d;
+    --app-blue:#3c57ff;
+    --app-blue-hover:#364ee6;
+    --app-light-bg: #ffffff;
+}
+
+body {
+  background: var(--app-dark-bg);
+}
+
+.container {
+  width: min(100% - 30px, 1080px);
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+}
+
+h1, h2, h3, a, p {
+  color: var(--app-light-bg);
+}
+
+.flexbox { 
+  display: flex;
+}
+
+.flexbox > select {
+  margin-right: 5px;
+}
+
+.select-container {
+  padding: 20px;
+  text-align: center;
+  position: relative;
+  top: 50%;
+  transform: translateY(-65%);
+}
+
+.form {
+  margin-bottom: 0px;
+}
+
+.form select {
+  width: 40%;
+  height: 45px;
+  padding: 0 15px;
+  border: var(--app-dark-bg);
+  background-color: #edeef1;
+  font-size: 17px;
+  font-weight: 400;
+  text-align: left;
+  color: var(--app-white);
+}
+
+.form button {
+  background-color: var(--app-orange);
+  font-weight: 300;
+  font-size: 18px;
+  width: 5rem;
+  height: 45px;
+  text-align: center;
+}
+
+/**************/   
+/*     Grid   */
+/*************/
+
+.grid-container {
+    display: grid;
+    width: 500px;
+    height: 500px;
+    background: var(--app-dark-bg);
+    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-gap: 5px;
+    margin-top: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+}
+
