@@ -18,23 +18,40 @@
         <title>How to make Grid</title>
     </head>
     <body>
-        <main>
-            <div class="container">
-                <div class="grid-container">
-                    <div class="select-container">
-                        <h1>Contacts</h1>
-                        <div class="form">
-                            <form class="flexbox">
-                                <input type="square" name="one" class="number-one" placeholder="name,city, email@email"/>                              
-                                <button class="create-figure">Add</button>
-                            </form>
+        <div class="container">
+            <div class="maincontainer">
+                <div class="data-input">
+                    <h1>MY CONTACTS</h1>
+                    <div class="input-form">
+                        <form action="" method="post">                    
+                            <input type="text" id="entrytext" name="entrytext" placeholder="Contac info(name, city, eamil)">
+                            <button type="submit" id="submit-btn">Add</button>
+                            <span class="message"></span>
+                        </form>
+                    </div>
+                </div>
+                <div class="contact-container">
+                    <h3>Most recent contact</h3>
+                    <div class="contactzone">
+                        <div class="contact-item">
+                            <div class="contact-info">
+                                <span id="label-name">Name</span>
+                                <span id="name-info">Roberto</span>
+                            </div>
+                            <div class="contact-info">
+                                <span id="label-city">City</span>
+                                <span id="city-info">Bogota</span>
+                            </div>
+                            <div class="contact-info">
+                                <span id="label-email">Email</span>
+                                <span id="email-info">Roberto@gmail.com</span>
+                            </div>
+                            <button type="button" id="deleteContact">Click to delete</button>
                         </div>
-                        <div class="grid-item1"> </div>
-                        <div class="grid-item2"> </div>
-                    </div>        
+                    </div>
                 </div>
             </div>
-        </main> 
+        </div>
     </body>
 </html>
 

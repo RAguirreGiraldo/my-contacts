@@ -14,6 +14,8 @@
 
 body {
   background: var(--app-dark-bg);
+  font-family:'Poppins',  sans-serif;
+  line-height: 1.6;
 }
 
 .container {
@@ -23,66 +25,49 @@ body {
   place-items: center;
 }
 
-h1, h2, h3, a, p {
-  color: var(--app-light-bg);
+.main-container{
+  margin: 0px auto;
+  padding: 25px;
+  border-radius: 5px;
 }
 
-.flexbox { 
-  display: flex;
+.data-input, .contact-zone{    
+  padding: 20px 0;
+  margin: 30px 0;    
 }
 
-.flexbox > select {
-  margin-right: 5px;
-}
-
-.select-container {
-  padding: 20px;
+.data-input > h1, .contact-zone > h3 {    
+  padding: 10px 0;
   text-align: center;
-  position: relative;
-  top: 50%;
-  transform: translateY(-65%);
+  font-size: 25px;   
+  color: var(--app-light-bg); 
 }
 
-.form {
-  margin-bottom: 0px;
+.data-input{
+  color:var(--app-light-bg);
+  text-align: center;    
 }
 
-.form select {
-  width: 40%;
-  height: 45px;
-  padding: 0 15px;
-  border: var(--app-dark-bg);
-  background-color: #edeef1;
-  font-size: 17px;
-  font-weight: 400;
-  text-align: left;
-  color: var(--app-white);
+.input-control{
+  background-color: var(--app-dark-bg); 
+  color: rgb(170, 160, 160) !important;
 }
 
-.form button {
-  background-color: var(--app-orange);
-  font-weight: 300;
-  font-size: 18px;
-  width: 5rem;
-  height: 45px;
-  text-align: center;
+.contact-item{
+  color: white;
+  background-color: var(--app-dark-bg);
+  border-radius: 5px;
+  width: 33%;   
+  margin-top: 10px;
 }
 
-/**************/   
-/*     Grid   */
-/*************/
-
-.grid-container {
-    display: grid;
-    width: 500px;
-    height: 500px;
-    background: var(--app-dark-bg);
-    grid-template-rows: 50px 50px 50px 50px;
-    grid-template-columns: 50px 50px 50px 50px;
-    grid-gap: 5px;
-    margin-top: 50px;
-    padding: 10px;
-    display: flex;
-    justify-content: center;
+button{
+  background-color: var(--app-green);
+  color   : var(--app-light-bg);
+  font-size: 15px; 
 }
 
+.contact-zone{
+  padding: 5px;
+  margin: 5px;
+}
