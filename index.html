@@ -19,20 +19,50 @@
     </head>
     <body>
         <div class="container">
-            <div class="maincontainer">
+            <div class="main-container">
                 <div class="data-input">
-                    <h1>MY CONTACTS</h1>
+                    <h1>My contacts</h1>
                     <div class="input-form">
-                        <form action="" method="post">                    
-                            <input type="text" id="entrytext" name="entrytext" placeholder="Contac info(name, city, eamil)">
-                            <button type="submit" id="submit-btn">Add</button>
+                        <form action="" method="post">
+                            <input class="input-control"   type="text" id="entrytext" name="entrytext" placeholder="Contact info (name, city, email)">
+                            <button type="submit" id="submit-btn" >Add</button>
                             <span class="message"></span>
                         </form>
                     </div>
                 </div>
                 <div class="contact-container">
                     <h3>Most recent contact</h3>
-                    <div class="contactzone">
+                    <div class="contact-zone">
+                        <div class="contact-item">
+                            <div class="contact-info">
+                                <span id="label-name">Name</span>
+                                <span id="name-info">Roberto</span>
+                            </div>
+                            <div class="contact-info">
+                                <span id="label-city">City</span>
+                                <span id="city-info">Bogota</span>
+                            </div>
+                            <div class="contact-info">
+                                <span id="label-email">Email</span>
+                                <span id="email-info">Roberto@gmail.com</span>
+                            </div>
+                            <button type="button" id="deleteContact">Click to delete</button>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-info">
+                                <span id="label-name">Name</span>
+                                <span id="name-info">Roberto</span>
+                            </div>
+                            <div class="contact-info">
+                                <span id="label-city">City</span>
+                                <span id="city-info">Bogota</span>
+                            </div>
+                            <div class="contact-info">
+                                <span id="label-email">Email</span>
+                                <span id="email-info">Roberto@gmail.com</span>
+                            </div>
+                            <button type="button" id="deleteContact">Click to delete</button>
+                        </div>
                         <div class="contact-item">
                             <div class="contact-info">
                                 <span id="label-name">Name</span>
@@ -50,6 +80,7 @@
                         </div>
                     </div>
                 </div>
+        
             </div>
         </div>
     </body>

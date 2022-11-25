@@ -16,6 +16,10 @@ body {
   background: var(--app-dark-bg);
 }
 
+h1, h2, h3, a, p {
+  color: var(--app-light-bg);
+}
+
 .container {
   width: min(100% - 30px, 1080px);
   margin-inline: auto;
@@ -46,15 +50,14 @@ body {
 }
 
 .input-control{
-  background-color: var(--app-dark-bg); 
-  color: rgb(170, 160, 160) !important;
+  background-color: var(--app-light-bg); 
+  color: var(--app-dark-bg) !important;
+  size: auto;
 }
 
 .contact-item{
-  color: white;
-  background-color: var(--app-dark-bg);
+  color: var(--app-light-bg);
   border-radius: 5px;
-  width: 33%;   
   margin-top: 10px;
 }
 
