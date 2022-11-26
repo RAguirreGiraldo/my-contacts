@@ -15,7 +15,7 @@
         referrerpolicy="no-referrer" />
         <link rel="stylesheet" href="assets/style/index.css" media="all"/>  
         <script src="assets/script/index.js" type="module"></script>
-        <title>My contacts</title>
+        <title>My Contacts</title>
     </head>
     <body>
         <div class="container">
@@ -23,31 +23,14 @@
                 <div class="data-input">
                     <h1>My contacts</h1>
                     <div class="input-form">
-                        <form action="" method="post">
-                            <input class="input-control"   type="text" id="entrytext" name="entrytext" placeholder="Contact info (name, city, email)">
-                            <button type="submit" id="submit-btn" >Add</button>
-                            <span class="message"></span>
-                        </form>
+                        <input class="input-control" type="text" id="entrytext" name="entrytext"
+                            placeholder="Contact info (name, city, email)" >
+                        <button type="button" id="submit-btn">Add</button>                
                     </div>
+                    <div id="message" class="message"></div>
                 </div>
                 <div class="contact-container">
-                    <h3>Most recent contact</h3>
-                    <div class="contact-zone">
-                        <div class="contact-item">
-                            <div class="contact-info">
-                                <span id="label-name"></span>
-                                <span id="name-info"></span>
-                            </div>
-                            <div class="contact-info">
-                                <span id="label-city"></span>
-                                <span id="city-info"></span>
-                            </div>
-                            <div class="contact-info">
-                                <span id="label-email"></span>
-                                <span id="email-info"></span>
-                            </div>
-                            <button type="button" id="deleteContact">X</button>
-                        </div>
+                    <div class="contact-zone" id="contactZone">  
                     </div>
                 </div>
             </div>
